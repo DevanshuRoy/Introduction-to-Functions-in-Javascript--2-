@@ -1,8 +1,31 @@
 <html>
     <body>
 
+        <button onclick="f2(2,7)">click here</button>
+
         <script>
-            
+            //function: dividing a big program into small subprograms
+            function f1() {
+                document.write("<br>"+"<p>Hello</p>");
+            }
+            f1();
+
+            function f2(x,y) {  
+                // x,y ; parameters--> will take argument's vales
+                var z=x+y;
+                document.write("<br>"+z);
+            }
+            var a=3,b=4;
+            f2(a,b);  // a,b : arguments--> will give its value to x,y
+
+            function f3(x,y) {
+                var z=x+y;
+                return z;  // its value is available outside function
+            }
+            var a=30,b=40;
+            var ans=f3(a,b);
+
+            document.write("<br><br>"+ans);
         </script>
 
     </body>
