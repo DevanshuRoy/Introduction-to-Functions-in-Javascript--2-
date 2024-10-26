@@ -1,0 +1,33 @@
+<html>
+    <body>
+
+        Multiplication Calculator
+        <br><br>
+
+        <label>Enter value a:</label>
+        <input type="number" id="a"><br><br>
+
+        <button type="button" id="multiply" onclick="multiply()">Multiply</button>
+        
+        <script>
+            var a=document.getElementById("a").innerHTML;
+            var i=1;
+
+            function multiply(a,b) {
+                var result=a*b;
+                document.write("Calculating result of a*b...    "+result);
+
+                if (i==1) {
+
+                    function multiply1(a,b) {
+                        var result=a*b;
+                        document.write("<br><br>Calculating result of a*b...    "+result);
+                    }
+
+                    multiply1(a,43);
+                }
+            }
+        </script>
+        
+    </body>
+</html>
